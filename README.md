@@ -1,6 +1,7 @@
 # ComBat_modular
 A modular implementation of ComBat harmonisation and various extensions, with support for feature-wise, similarity-informed empirical Bayes priors.
 
+This code is originally from: **[DiagnoseHarmonisation](https://github.com/Jake-Turnbull/HarmonisationDiagnostics)** and it is recommended to use this package rather than the standard implementation provided here. 
 
 This repository contains a Python implementation of standard ComBat alongside an experimental extension that constructs local, feature-specific hyperparameters from feature-feature similarity matrices. Similarity can be derived from within-batch data or supplied externally, including spatial proximity information for imaging applications. The code also includes covariate-aware mean modelling, rank-safe covariate pruning, optional CovBat-style covariance correction, and utilities for inspecting prior estimates and harmonisation outputs.
 The project is intended for harmonising imaging data where preserving biologically meaningful covariate structure while removing batch effects is critical. It is designed to be transparent, configurable, and easy to compare against baseline ComBat.
